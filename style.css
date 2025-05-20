@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f7f9fc;
+  background: linear-gradient(to bottom right, #f0f9ff, #e3f2fd);
   color: #1a1a1a;
 }
 
@@ -11,16 +11,17 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #444;
+  color: #2c3e50;
 }
 
 .nav-links {
@@ -33,7 +34,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #2c3e50;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -52,13 +53,15 @@ body {
   background: white;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
+  border-radius: 16px;
+  border: 1px solid #e6ecf0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
 }
 
 .card h3 {
@@ -66,12 +69,13 @@ body {
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.75rem;
+  color: #2c3e50;
 }
 
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #888;
   border-top: 1px solid #e0e0e0;
   margin-top: 3rem;
@@ -93,8 +97,20 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
+  border: none;
+  border-radius: 8px;
 }
 
 button:hover {
   background-color: #005fd1;
+}
+
+.resource-list li a {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resource-list li a:hover {
+  text-decoration: underline;
 }
